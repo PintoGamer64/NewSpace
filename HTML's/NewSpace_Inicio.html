@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width" charset="utf-8">
+        <title>NewSpace | Inicio</title>
+        <link rel="stylesheet" type="text/css" href="/CSS's/NewSpaceInicio.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+<!---------------------------Código Barra Lateral------------------------------>
+        <nav class="Barra_Navegacion">
+            <div class="barra_lateral">
+                <div class="Contenido_Logo">
+                    <div class="Logo">
+
+                        <div class="Logo_Name">Navegación</div>
+                    </div>
+                    <i class='bx bx-menu' id="Menu"></i>
+                </div>
+                <ul>
+                    <li>
+                        <input type="text" placeholder="Búsqueda...">
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bxs-home' id="Inicio"></i>
+                            <span class="Nombre_Links">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bx-bolt-circle' id="Servicios"></i>
+                            <span class="Nombre_Links">Servicios</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bxs-news' id="Novedades"></i>
+                            <span class="Nombre_Links">Novedades</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bxs-file-doc' id="Terminos"></i>
+                            <span class="Nombre_Links">Términos</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bx-phone' id="Contacto"></i>
+                            <span class="Nombre_Links">Contacto</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bx-wrench' id="Soporte"></i>
+                            <span class="Nombre_Links">Soporte</span>
+                        </a>
+                    </li>
+                    <li id="toggle">
+                        <i class="Indicador"></i>
+                        <script>
+                            const body = document.querySelector('body');
+                            const toggle = document.getElementById('toggle');
+                            toggle.onclick = function() {
+                                toggle.classList.toggle('active')
+                                body.classList.toggle('active')
+                            }
+                        </script>
+                    </li>
+                </ul>
+                <div class="Contenido_Perfil">
+                    <div class="Perfil">
+                        <div class="Detalles_Perfil">
+                            <img src="/Imagenes/20210702_105012_4.jpg" alt="Desarrollador de la Pagina" class="Imagen_Perfil">
+                            <div class="Nombre_Trabajo">
+                                <div class="Nombre">Joan Cardozo</div>
+                                <div class="Trabajo">Web Developer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+<!-----------------------        Contenido       ---------------------------->
+        <div class="Contenido">
+            <div class="Logo_Imagen">
+                <img src="/Imagenes/NewSpace NewNew!!!!.png" alt="NewSpace" width="190px" height="70px">
+            </div>
+            <div class="contenedor1">
+                <img src="/Imagenes/NewSpace NewNew!!!!.png" alt="NewSpace - Logo" width="650‬px" height="250px">
+                <h1 class="presentaciontexto">Creando la Web Con La Comunidad</h1>
+            </div>
+            <!--Enfocándonos en el desarrollo web, a principios del 2021, para dar calidad en el desarrollo de las paginas, con una accesibilidad y entendimiento de las misma de manera sencilla y fácil de comprender. siendo NewSpace LTDA dedicada a ayudar a la web, a evolucionar. Teniendo a nuestro nuevos y antiguos usuario para mejorar la misma.-->
+            <div class="contenedor1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit cum autem obcaecati labore praesentium odio, quod facere asperiores voluptates ratione velit alias deleniti accusamus nostrum? Cumque veniam ex optio nemo!</p>
+            </div>
+        </div>
+        <script>
+                let btn = document.querySelector("#Menu");
+                let barra_lateral = document.querySelector(".barra_lateral");
+                let Barra_Navegacion = document.querySelector(".Barra_Navegacion")
+                let Contenido = document.querySelector(".Contenido")
+                let presentacion = document.querySelector(".presentacion")
+                let contenedor1 = document.querySelector(".contenedor1")
+    
+                btn.onclick = function() {
+                    barra_lateral.classList.toggle("active");
+                    Barra_Navegacion.classList.toggle("active");
+                    Contenido.classList.toggle("active");
+                    presentacion.classList.toggle("active");
+                    contenedor1.classList.toggle("active")
+                }
+        </script>
+    </body>
+</html>
