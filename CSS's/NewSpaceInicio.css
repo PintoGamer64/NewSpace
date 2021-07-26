@@ -63,7 +63,6 @@ body.active .barra_lateral{
     top: 6px;
     cursor: pointer;
     font-size: 30px;
-    border-radius: 0px 10px 10px 0px;
     height: 50px;
     z-index: 99;
     width: 50px;
@@ -78,6 +77,7 @@ body.active .barra_lateral{
 }
 body.active .barra_lateral.active #Menu{
     background: #1f1f1f;
+    border-right: solid 5px #1d1b31;
 }
 body.active #Menu{
     background: #1f1f1f;
@@ -251,21 +251,19 @@ body.active .Perfil{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15px;
     top: 10px;
     left: 5px;
     display: block;
     width: 65px;
     height: 30px;
-    border-radius: 160px;
     background: #ffffff;
     cursor: pointer;
-    transition: all 0.5s ease;
 }
 #toggle.active{
     background: #585858;
 }
 #toggle.active .Indicador{
-    transition: all 0.5s ease;
     left: 35px;
     background: linear-gradient(#2E64FE,#A4A4A4);
 }
@@ -276,9 +274,8 @@ body.active .Perfil{
     width: 30px;
     height: 30px;
     background: linear-gradient(#FFFF00,#ffaf01);
-    border-radius: 50%;
     transform: scale(0.8);
-    transition: all 0.5s ease;
+    border-radius: 15px;
 }
 /*-------Código del Contenido---------*/
 .Contenido{
@@ -294,7 +291,7 @@ body.active .Perfil{
 }
 .Logo_Imagen{
     position: absolute;
-    width: 100%;
+    width: 110%;
     height: auto;
     right: 0;
     border-bottom: solid 5px #1d1b31;
@@ -327,8 +324,15 @@ body.active .Logo_Imagen img{
     margin-right: 150px;
     transition: all 0.5s ease;
     border: solid 2.5px #1d1b31;
-    border-radius: 8px;
     background: #ffffff85;
+}
+.contenedor1 h1{
+    color: #000;
+    margin: 10px;
+}
+body.active .contenedor1 h1{
+    transition: all 0.5s ease;
+    color: #fff;
 }
 body.active .contenedor1{
     background: #ffffff85;
