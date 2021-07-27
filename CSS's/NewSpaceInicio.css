@@ -338,10 +338,11 @@ body.active .Perfil{
     width: 90%;
 }
 .Logo_Imagen{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: auto;
     right: 0;
+    z-index: 10;
     border-bottom: solid 5px #1d1b31;
     background: #fff;
     transition: all 0.5s ease;
@@ -411,7 +412,7 @@ body.active .presentacion{
     background: linear-gradient(#414141, #414141 30%, #1d1b31 30%,#1d1b31);
     margin: 20px;
     overflow: hidden;
-    border-bottom: solid 5px #000;
+    border: solid 5px #000;
     transition: all 1.5s ease;
 }
 .tarjetas:hover{
@@ -425,19 +426,24 @@ body.active .presentacion{
     width: 100%;
     height: 100%;
     transition: 0.5s;
-    z-index: 100000;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     transform-origin: top;
 }
 .tarjetas:hover .caja-imagen{
-    transform: translateY(30px) scale(0.5);
+    transform: translateY(5px) scale(0.5);
+    width: 100%;
 }
 .caja-imagen img{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    object-fit:contain;
+    margin: 5px;
 }
 .tarjetas .tarjeta-contenido{
     position: absolute;
@@ -456,14 +462,23 @@ body.active .presentacion{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin: 5px;
 }
 .tarjetas .tarjeta-contenido .detalles-tarjeta h2{
     color: #fff;
     font-weight: 400;
     font-size: 1.1em;
+    opacity: 0;
+    transition: 0.5s;
 }
 .tarjetas .tarjeta-contenido .detalles-tarjeta h2 span{
     font-size: 0.7em;
     font-weight: 300;
     color: #8c8c8c;
+    opacity: 0;
+    transition: 0.5s;
+}
+.tarjetas:hover .tarjeta-contenido .detalles-tarjeta h2, .tarjetas:hover .tarjeta-contenido .detalles-tarjeta h2 span{
+    opacity: 1;
+    transition: 0.5s;
 }
