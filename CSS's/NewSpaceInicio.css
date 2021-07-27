@@ -59,6 +59,7 @@ body{
     width: 100%;
     background: #ffffff;
     transition: all 0.5s ease;
+    overflow-x: hidden;
 }
 body.active{
     background: #121212;
@@ -66,6 +67,11 @@ body.active{
 }
 body.active p, h1,h2{
     color: #ffffff;
+}
+.relative{
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 .barra_lateral{
     position: fixed;
@@ -372,12 +378,15 @@ body.active .Logo_Imagen img{
     margin-top: 30px;
     margin-right: 150px;
     transition: all 0.5s ease;
-    border-bottom: solid 2.5px #1d1b31;
+    border-bottom: solid 2.5px #27216f;
     background: #ffffff85;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+body.active .contenedor1{
+    border-bottom: solid 4px #000;
 }
 .contenedor1 img{
     flex-wrap: wrap;
@@ -496,4 +505,111 @@ body.active .tarjetas:hover{
 }
 #toggle.active .tarjetas:hover .tarjeta-contenido .detalles-tarjeta h2, .tarjetas:hover .tarjeta-contenido .detalles-tarjeta h2 span{
     color: #ffffff;
+}
+/*----------------------Footer---------------------*/
+.main-content{
+    border-top: solid 5px #8c8c8c;
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    background: #111;
+    margin-left: 6.5%;
+    transition: 0.01s;
+}
+.Contenido.active .main-content{
+    margin-left: 9%;
+    transition: 0.01s;
+}
+.caja h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #232387;
+    border-left: solid 5px rgb(91, 91, 91);
+}
+.izquierda{
+    width: 30.5%;
+    margin: 1%;
+}
+.central{
+    width: 30.5%;
+    margin: 1%;
+}
+.derecha{
+    margin: 1%;
+    width: 30.5%;
+}
+.izquierda .content p{
+    text-align: justify;
+    color: #ffffff;
+}
+.izquierda .content{
+    margin: 20px 0 0 0;
+}
+.izquierda .content .social{
+    margin: 20px 0 0 0;
+}
+.izquierda .content .social a{
+    color: #ffffff;
+    margin: 0 2px;
+}
+.izquierda .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.izquierda .content .social a span:hover{
+    background: #151555;
+}
+.central .content .bx{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 40px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #ffffff;
+    align-items: center;
+}
+.central .content .bx:hover{
+    background: #151555;
+}
+.central .content .texto{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+    color: #ffffff;
+}
+.central .content .phone{
+    margin: 10px 0;
+    color: #ffffff;
+}
+.derecha .contactanos .boton{
+    margin: 10px;
+}
+.derecha .contactanos .boton button{
+    height: 40px;
+    width: 85%;
+    border: none;
+    outline: none;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Contenido.active .derecha .contactanos .boton button{
+    width: 75%;
+}
+.derecha .contactanos .boton button:hover{
+    background: #151555;
+    color: #fff;
 }
