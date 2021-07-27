@@ -12,3 +12,5 @@ Al ser este un proyecto de codigo abierto, pueden usarlo como inspiracion y pode
 
 ATTE:
 - Joan Sebastian Cardozo Salinas | PintoGamer64
+
+![NewSpace NewNew (1)](https://user-images.githubusercontent.com/84690368/127204091-e898ef98-0ab3-4a39-bdc1-935312a14958.png)
