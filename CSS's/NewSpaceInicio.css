@@ -378,11 +378,16 @@ body.active .Logo_Imagen img{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+}
+.contenedor1 img{
+    flex-wrap: wrap;
 }
 .contenedor1 h1{
     color: #000;
     margin: 10px;
+}
+.contenedor1 p{
+    margin: 20px;
 }
 body.active .contenedor1 h1{
     transition: all 0.5s ease;
@@ -407,17 +412,21 @@ body.active .presentacion{
 /*---------------Tarjetas de Presentacion----------------*/
 .tarjetas{
     position: relative;
+    top: 20px;
     width: 225px;
     height: 325px;
-    background: linear-gradient(#414141, #414141 30%, #1d1b31 30%,#1d1b31);
     margin: 20px;
     overflow: hidden;
-    border: solid 5px #000;
-    transition: all 1.5s ease;
+    border-bottom: solid 5px #000;
+    transition: all 0.3s ease;
 }
 .tarjetas:hover{
+    top: 0px;
     background: linear-gradient(#41414133, #41414133 30%, #1d1b31 30%,#1d1b31);
-    transition: all 1.5s ease;
+    transition: all 0.3s ease;
+}
+body.active .tarjetas:hover{
+    background: linear-gradient(#41414133, #41414133 30%, #000 30%,#000);
 }
 .caja-imagen{
     position: absolute;
@@ -425,7 +434,7 @@ body.active .presentacion{
     left: 0;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
     z-index: 4;
     display: flex;
     justify-content: center;
@@ -433,8 +442,9 @@ body.active .presentacion{
     transform-origin: top;
 }
 .tarjetas:hover .caja-imagen{
-    transform: translateY(5px) scale(0.5);
+    transform: translateY(15px) scale(0.5);
     width: 100%;
+    transition: 0.3;
 }
 .caja-imagen img{
     position: absolute;
@@ -470,6 +480,7 @@ body.active .presentacion{
     font-size: 1.1em;
     opacity: 0;
     transition: 0.5s;
+    margin: 5px;
 }
 .tarjetas .tarjeta-contenido .detalles-tarjeta h2 span{
     font-size: 0.7em;
@@ -479,6 +490,10 @@ body.active .presentacion{
     transition: 0.5s;
 }
 .tarjetas:hover .tarjeta-contenido .detalles-tarjeta h2, .tarjetas:hover .tarjeta-contenido .detalles-tarjeta h2 span{
+    pointer-events: none;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.5;
+}
+#toggle.active .tarjetas:hover .tarjeta-contenido .detalles-tarjeta h2, .tarjetas:hover .tarjeta-contenido .detalles-tarjeta h2 span{
+    color: #ffffff;
 }
