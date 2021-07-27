@@ -9,5 +9,6 @@ Materia = Emprendimiento.
 - **PHP**
 
 Al ser este un proyecto de codigo abierto, pueden usarlo como inspiracion y poder ayudarme o ayudarse en sus proyectos dandose una base donde empezar.
+
 ATTE:
 - Joan Sebastian Cardozo Salinas | PintoGamer64
