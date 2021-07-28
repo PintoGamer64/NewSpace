@@ -5,9 +5,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/*-----------------------------------*/
 ::-webkit-scrollbar{
-    width: 0;
+    height: 2px;
+    background: rgb(79, 79, 79);
 }
+::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: #585858;
+}
+/*-----------------------------------*/
 #progressbar{
     position: fixed;
     top: 0;
