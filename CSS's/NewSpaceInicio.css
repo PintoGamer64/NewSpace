@@ -68,11 +68,6 @@ body.active{
 body.active p, h1,h2{
     color: #ffffff;
 }
-.relative{
-    position: relative;
-    width: 100%;
-    height: auto;
-}
 .barra_lateral{
     position: fixed;
     top: 0;
@@ -265,7 +260,6 @@ body.active .barra_lateral.active ul li a:hover{
 }
 body.active .Perfil{
     transition: all 0.5s ease;
-    border-top: solid 5px #1d1b31;
     background: #000;
     flex-wrap: nowrap;
 }
@@ -341,7 +335,7 @@ body.active .Perfil{
     transition: all 0.5s ease;
 }
 .Contenido.active{
-    width: 90%;
+    width: 88.5%;
 }
 .Logo_Imagen{
     position: fixed;
@@ -379,17 +373,22 @@ body.active .Logo_Imagen img{
     margin-right: 150px;
     transition: all 0.5s ease;
     border-bottom: solid 2.5px #27216f;
-    background: #ffffff85;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 body.active .contenedor1{
-    border-bottom: solid 4px #000;
+    border-bottom: solid 4px rgb(79, 79, 79);
 }
 .contenedor1 img{
     flex-wrap: wrap;
+}
+.contenedor1 #diseño{
+    position: relative;
+    transition: all 10s ease;
+    float: right;
+    margin-bottom: 10px;
 }
 .contenedor1 h1{
     color: #000;
@@ -397,6 +396,10 @@ body.active .contenedor1{
 }
 .contenedor1 p{
     margin: 20px;
+}
+.contenedor1 .textual{
+    position: relative;
+    float: left;
 }
 body.active .contenedor1 h1{
     transition: all 0.5s ease;
@@ -426,11 +429,11 @@ body.active .presentacion{
     height: 325px;
     margin: 20px;
     overflow: hidden;
-    border-bottom: solid 5px #000;
     transition: all 0.3s ease;
 }
 .tarjetas:hover{
     top: 0px;
+    border-bottom: solid 10px rgb(99, 99, 99);
     background: linear-gradient(#41414133, #41414133 30%, #1d1b31 30%,#1d1b31);
     transition: all 0.3s ease;
 }
@@ -519,9 +522,8 @@ body.active .tarjetas:hover{
     margin-left: 6.5%;
     transition: 0.01s;
 }
-.Contenido.active .main-content{
-    margin-left: 9%;
-    transition: 0.01s;
+.caja{
+    text-align: center;
 }
 .caja h2{
     font-size: 1.125rem;
@@ -543,30 +545,14 @@ body.active .tarjetas:hover{
     width: 30.5%;
 }
 .izquierda .content p{
-    text-align: justify;
+    text-align: center;
     color: #ffffff;
+}
+.izquierda .content div{
+    float: left;
 }
 .izquierda .content{
     margin: 20px 0 0 0;
-}
-.izquierda .content .social{
-    margin: 20px 0 0 0;
-}
-.izquierda .content .social a{
-    color: #ffffff;
-    margin: 0 2px;
-}
-.izquierda .content .social a span{
-    height: 40px;
-    width: 40px;
-    background: #1a1a1a;
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    transition: 0.3s;
-}
-.izquierda .content .social a span:hover{
-    background: #151555;
 }
 .central .content .bx{
     font-size: 1.4375rem;
@@ -597,14 +583,22 @@ body.active .tarjetas:hover{
     margin: 10px;
 }
 .derecha .contactanos .boton button{
+    margin-left: auto;
+    margin-right: auto;
     height: 40px;
-    width: 85%;
+    width: 60%;
     border: none;
     outline: none;
     font-size: 1.0625rem;
     font-weight: 500;
     cursor: pointer;
     transition: 0.3s;
+}
+.derecha .contactanos .boton p{
+    text-align: right;
+    color: #ffffff;
+    margin: 10px;
+    width: 80%;
 }
 .Contenido.active .derecha .contactanos .boton button{
     width: 75%;

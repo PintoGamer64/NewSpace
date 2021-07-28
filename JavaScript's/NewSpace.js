@@ -18,7 +18,6 @@
             barra_lateral.classList.toggle("active");
             Barra_Navegacion.classList.toggle("active");
             Contenido.classList.toggle("active");
-            presentacion.classList.toggle("active");
             contenedor1.classList.toggle("active");
 }
 /*-------------Barra de Progreso---------------*/
