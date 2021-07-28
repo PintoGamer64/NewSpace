@@ -1,4 +1,5 @@
 # NewSpace
+<<<<<<< HEAD
 Proyecto de emprendimiento, Concepto de pagina web, para contacto y desarrollo de paginas web, usando los servicios proporcionados.
 Este es un proyecto de codigo abierto, para mi colegio.
 Materia = Emprendimiento.
@@ -14,3 +15,8 @@ ATTE:
 - Joan Sebastian Cardozo Salinas | PintoGamer64
 
 ![NewSpace NewNew (1)](https://user-images.githubusercontent.com/84690368/127204091-e898ef98-0ab3-4a39-bdc1-935312a14958.png)
+=======
+Proyecto de emprendimiento, Concepto de pagina web, para contacto y desarrollo de paginas web, usando los servicios proporcionados. Este es un proyecto de codigo abierto, para mi colegio. Materia = Emprendimiento.
+
+- Esta es una rama del codigo fuente, solo trabajo.
+>>>>>>> Contenido
