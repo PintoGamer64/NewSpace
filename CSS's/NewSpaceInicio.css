@@ -191,6 +191,7 @@ body.active #Menu {
   position: relative;
   height: 50px;
   width: 100%;
+  pointer-events: none;
   margin: 0 5px;
   list-style: none;
   line-height: 50px;

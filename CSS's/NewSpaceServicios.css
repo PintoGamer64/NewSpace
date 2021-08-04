@@ -191,6 +191,7 @@ body.active #Menu {
   position: relative;
   height: 50px;
   width: 100%;
+  pointer-events: none;
   margin: 0 5px;
   list-style: none;
   line-height: 50px;
@@ -257,7 +258,7 @@ body.active .barra_lateral.active ul li input {
   align-items: center;
   text-decoration: none;
   transition: all 0.05s ease;
-  pointer-events: none;
+  pointer-events: all;
   white-space: nowrap;
 }
 
@@ -368,6 +369,7 @@ body.active .Perfil {
   border-radius: 15px;
   top: 10px;
   left: 5px;
+  pointer-events: all;
   display: block;
   width: 65px;
   height: 30px;
@@ -377,14 +379,17 @@ body.active .Perfil {
 
 #toggle.active {
   background: #585858;
+  pointer-events: all;
 }
 
 #toggle.active .Indicador {
+  pointer-events: all;
   left: 35px;
   background: linear-gradient(#2E64FE, #A4A4A4);
 }
 
 .Indicador {
+  pointer-events: all;
   position: absolute;
   top: 0;
   left: 0;
@@ -439,7 +444,12 @@ body.active .Logo_Imagen img {
   transition: all 0.5s ease;
   background: #ffffff82;
 }
-
+h2{
+  color: #000;
+}
+body.active h2{
+  color: #fff;
+}
 .contenedor1 {
   text-align: center;
   top: 60px;
