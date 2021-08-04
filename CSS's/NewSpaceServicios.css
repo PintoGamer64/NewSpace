@@ -178,6 +178,7 @@ body.active #Menu {
   margin-top: 20px;
   transition: all 0.4s ease;
   opacity: 0;
+  pointer-events: none;
 }
 
 .barra_lateral.active ul {
@@ -185,13 +186,13 @@ body.active #Menu {
   opacity: 1;
   top: 0%;
   left: 0%;
+  pointer-events: all;
 }
 
 .barra_lateral ul li {
   position: relative;
   height: 50px;
   width: 100%;
-  pointer-events: none;
   margin: 0 5px;
   list-style: none;
   line-height: 50px;
@@ -258,13 +259,11 @@ body.active .barra_lateral.active ul li input {
   align-items: center;
   text-decoration: none;
   transition: all 0.05s ease;
-  pointer-events: all;
   white-space: nowrap;
 }
 
 .barra_lateral.active ul li a {
   transition: all 0.5s ease;
-  pointer-events: all;
 }
 
 .barra_lateral.active ul li a:hover {
@@ -369,7 +368,6 @@ body.active .Perfil {
   border-radius: 15px;
   top: 10px;
   left: 5px;
-  pointer-events: all;
   display: block;
   width: 65px;
   height: 30px;
@@ -379,17 +377,14 @@ body.active .Perfil {
 
 #toggle.active {
   background: #585858;
-  pointer-events: all;
 }
 
 #toggle.active .Indicador {
-  pointer-events: all;
   left: 35px;
   background: linear-gradient(#2E64FE, #A4A4A4);
 }
 
 .Indicador {
-  pointer-events: all;
   position: absolute;
   top: 0;
   left: 0;
@@ -470,7 +465,13 @@ body.active h2{
 body.active .contenedor1 {
   border-bottom: solid 4px rgb(79, 79, 79);
 }
-
+.contenedor1 li{
+  color: #000;
+  text-align: left;
+}
+body.active .contenedor1 li{
+  color: #fff;
+}
 .contenedor1 img {
   margin: 20px;
   flex-wrap: wrap;
