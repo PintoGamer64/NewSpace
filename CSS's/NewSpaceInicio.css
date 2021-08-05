@@ -374,10 +374,12 @@ body.active .Perfil {
   height: 30px;
   background: #ffffff;
   cursor: pointer;
+  pointer-events: all;
 }
 
 #toggle.active {
   background: #585858;
+  pointer-events: all;
 }
 
 #toggle.active .Indicador {
@@ -390,6 +392,7 @@ body.active .Perfil {
   top: 0;
   left: 0;
   width: 30px;
+  pointer-events: all;
   height: 30px;
   background: linear-gradient(#FFFF00, #ffaf01);
   transform: scale(0.8);
