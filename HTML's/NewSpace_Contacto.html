@@ -2,8 +2,8 @@
 <html lang="es">
     <head>
         <meta name="viewport" content="width=device-width" charset="utf-8">
-        <title>NewSpace | Inicio</title>
-        <link rel="stylesheet" type="text/css" href="/CSS's/NewSpaceInicio.css">
+        <title>NewSpace | Contacto</title>
+        <link rel="stylesheet" type="text/css" href="/CSS's/NewSpaceContacto.css">
         <link rel="shortcut icon" href="/Imagenes/NewSpace Icono.png">
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -82,51 +82,44 @@
                 <img src="/Imagenes/NewSpace NewNew!!!!.png" alt="NewSpace" width="190px" height="70px">
             </div>
             <div class="contenedor1">
-                <img src="/Imagenes/NewSpace NewNew!!!!.png" alt="NewSpace - Logo" width="650‬px" height="250px">
-                <h1 class="presentaciontexto">Creando La Web Con El Mundo</h1>
-            </div>
-            <!---->
-            <div class="contenedor1">
-                <p>Sabemos que un sitio web es una de las mejores herramientas para conseguir nuevos clientes, y asi darte a conocer en el mercado, pero no cualquier sitio web asegura el éxito de tu empresa o emprendimiento. Pero en NewSpace nosotros nos dedicamos a crear sitios web de calidad, con diseños rápidos, innovadores y amigables para todos tus clientes.</p>
+                <h1 class="presentaciontexto">&nbsp;&nbsp;CONTACTA CON NEWSPACE Y SUS SERVICIOS&nbsp;&nbsp;</h1>
+                <br>
+                <img  id="diseño" src="/Imagenes/images.png" alt="diseño web" width="15%">
             </div>
             <div class="contenedor1">
-                <div class="tarjetas">
-                    <div class="caja-imagen">
-                        <img src="/Imagenes/servicio-al-cliente.png" alt="servicio al cliente">
-                        <!--<div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
-                    </div>
-                    <div class="tarjeta-contenido">
-                        <div class="detalles-tarjeta">
-                            <h2>Servicio 24/7<br><span>Ofrecemos servicio al cliente 24 / 7, para asi otorgarle el mejor servicio para todas sus inquietudes.</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetas">
-                    <div class="caja-imagen">
-                        <img src="/Imagenes/diseno-web.png" alt="diseño">
-                        <!--<div>Iconos diseñados por <a href="https://www.flaticon.es/autores/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
-                    </div>
-                    <div class="tarjeta-contenido">
-                        <div class="detalles-tarjeta">
-                            <h2>Desarrollo<br><span>Te ofrecemos la libertad de preguntarnos como va tu pagina, y asi controlar lo que quieres o no en tu pagina.</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetas">
-                    <div class="caja-imagen">
-                        <img src="/Imagenes/calidad-premium.png" alt="calidad">
-                        <!--<div>Iconos diseñados por <a href="" title="fjstudio">fjstudio</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
-                    </div>
-                    <div class="tarjeta-contenido">
-                        <div class="detalles-tarjeta">
-                            <h2>Calidad<br><span>Nosotros buscamos ofrecer al los usuarios, en sus paginas, un nivel de calidad notorio que merecen.</span></h2>
-                        </div>
-                    </div>
-                </div>
+                <p>Usa este formulario para contactarnos y establecer o iniciar nuestro servicios.<br>
+                Los requerimientos que pide el siguiente formulario son:<br>
+                <ul>
+                    <li>Nombres Completos</li>
+                    <li>Apellidos Completos</li>
+                    <li>Correo Electronico</li>
+                    <li>Numero Telefonico (Celular) //Opcional</li>
+                    <li>Tipo de Plan</li>
+                    <li>Mensaje</li>
+                </ul></p>
             </div>
             <div class="contenedor1">
-                <p class="textual">Enfocándonos en el desarrollo web, a principios del 2021, para dar calidad en el desarrollo de las paginas, con una accesibilidad y entendimiento de las misma de manera sencilla y fácil de comprender. siendo NewSpace LTDA dedicada a ayudar a la web, a evolucionar. Teniendo a nuestro nuevos y antiguos usuario para mejorar la misma.</p>
-                <img  id="diseño" src="/Imagenes/webdesing.gif" alt="diseño web" width="80%">
+                <p class="textual">Formulario de Contacto</p>
+                <div class="formular">
+                    <form action="/PHP's/Contacto.php" method="POST">
+                        <label for="">Nombres Completos</label>
+                        <input type="text" placeholder="Nombres" pattern="[A-Za-z]{35}" required>
+                        <label for="">Apellidos Completos</label>
+                        <input type="text" placeholder="Apellidos" pattern="[A-Za-z]{35}" required>
+                        <label for="">Correo Electronico</label>
+                        <input type="email" placeholder="Correo Electronico" required>
+                        <label for="">Pais</label>
+                        <select name="Paises" id="Pais">
+                            <option value="1">Colombia</option>
+                            <option value="2">Argentina</option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                        </select>
+                        <label for="">Numero Telefonico</label>
+                        <input type="number" placeholder="Numero Telefonico" pattern="[0-9]{10}">
+                    </form>
+                </div>
             </div>
 <!-----------------------Footer o pie de Pagina------------------------>
             <div class="main-content">
