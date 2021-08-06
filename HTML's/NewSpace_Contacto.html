@@ -87,47 +87,52 @@
                 <img  id="diseño" src="/Imagenes/images.png" alt="diseño web" width="15%">
             </div>
             <div class="contenedor1">
-                <p>Usa este formulario para contactarnos y establecer o iniciar nuestro servicios.<br>
+                <p>Usa este formulario para contactarnos y establecer o iniciar nuestro servicios, ten en cuenta que este formulario se envia al correo de la empresa, dando como resultado a que esperes un hasta un dia por tu respuesta.<br>
                 Los requerimientos que pide el siguiente formulario son:<br>
                 <ul>
-                    <li>Nombres Completos</li>
-                    <li>Apellidos Completos</li>
-                    <li>Correo Electrónico</li>
+                    <li>Nombres Completos //Obligatorio</li>
+                    <li>Apellidos Completos //Obligatorio</li>
+                    <li>Correo Electrónico //Obligatorio</li>
                     <li>Numero Telefónico (Celular) //Opcional</li>
-                    <li>Tipo de Plan</li>
-                    <li>Mensaje</li>
+                    <li>Tipo de Plan //Obligatorio</li>
+                    <li>Mensaje //Obligatorio</li>
                 </ul></p>
+                <img src="/Imagenes/Form-1.jpg" alt="Formulario" width="310‬px" height="310px">
             </div>
             <div class="contenedor1">
-                <p class="textual">Formulario de Contacto</p>
-                <div class="formular">
-                    <form action="/PHP's/Contacto.php" method="POST">
-                        <label for="">Nombres Completos</label>
-                        <input type="text" placeholder="Nombres" pattern="[A-Za-z]{35}" max="35" required>
-                        <label for="">Apellidos Completos</label>
-                        <input type="text" placeholder="Apellidos" pattern="[A-Za-z]{35}" max="35" required>
-                        <label for="">Correo Electrónico</label>
-                        <input type="email" placeholder="Correo Electrónico" required>
-                        <label for="">País</label>
-                        <select name="Países" id="Pais" required>
-                            <option value="1">Colombia    | +57</option>
-                            <option value="2">Argentina   | +54</option>
-                            <option value="3">Peru        | +51</option>
-                            <option value="4">Ecuador     | +593</option>
-                            <option value="5">Chile       | +56</option>
-                        </select>
-                        <label for="">Numero Telefónico</label>
-                        <input type="number" placeholder="Numero Telefónico" pattern="[0-9]{10}" max="10">
-                        <label for="">Tipo de Plan</label>
-                        <select name="Planes" id="Planes" required>
-                            <option value="1">Inicial</option>
-                            <option value="2">Profesional</option>
-                            <option value="3">Ultimate</option>
-                        </select>
-                        <label for="">Mensaje</label>
-                        <textarea name="Mensaje" id="Mensaje" cols="100" rows="10" maxlength="3500" required></textarea>
+                <section class="form_wrap">
+
+                    <section class="cantact_info">
+                        <section class="info_title">
+                            <span class="fa fa-user-circle"></span>
+                            <h2>INFORMACION<br>DE CONTACTO</h2>
+                        </section>
+                        <section class="info_items">
+                            <p><span class="fa fa-envelope"></span>NewSpaceCorreo@outlook.com</p>
+                            <p><span class="fa fa-mobile"></span>+57 3224004147 | Via Whatsapp</p>
+                        </section>
+                    </section>
+            
+                    <form action="/PHP's/enviar.php" class="form_contact">
+                        <h2>Envia un mensaje</h2>
+                        <div class="user_info">
+                            <label for="names">Nombres y Apellidos*</label>
+                            <input type="text" id="names">
+            
+                            <label for="phone">Telefono / Celular</label>
+                            <input type="text" id="phone">
+            
+                            <label for="email">Correo electronico *</label>
+                            <input type="text" id="email">
+            
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje"></textarea>
+            
+                            <input type="button" value="Enviar Mensaje" id="btnSend">
+                        </div>
                     </form>
-                </div>
+            
+                </section>
             </div>
 <!-----------------------Footer o pie de Pagina------------------------>
             <div class="main-content">
@@ -162,5 +167,7 @@
         </div>
         <!-------------Vinculo de JavaScript---------------->
         <script src="/JavaScript's/NewSpace.js" language="javascript" type="text/javascript"></script>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
