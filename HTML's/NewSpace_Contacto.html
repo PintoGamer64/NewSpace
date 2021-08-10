@@ -6,8 +6,7 @@
         <link rel="stylesheet" type="text/css" href="/CSS's/NewSpaceContacto.css">
         <link rel="shortcut icon" href="/Imagenes/NewSpace Icono.png">
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-        <script src="js/jquery-3.2.1.js"></script>
-        <script src="js/script.js"></script>
+
     </head>
     <body>
 <!---------------------------Código Barra Lateral------------------------------>
@@ -110,27 +109,27 @@
                             <h2>INFORMACION<br>DE CONTACTO</h2>
                         </section>
                         <section class="info_items">
-                            <p><span class="fa fa-envelope"></span>NewSpaceCorreo@outlook.com</p>
-                            <p><span class="fa fa-mobile"></span>+57 3224004147 | Via Whatsapp</p>
+                            <p><span class="fa fa-envelope"></span> info.contact@gmail.com</p>
+                            <p><span class="fa fa-mobile"></span> +1(585) 902-8665</p>
                         </section>
                     </section>
             
-                    <form action="/PHP's/enviar.php" method="POST" class="form_contact">
+                    <form action="/PHP's/enviarcorreo.php" method="POST" class="form_contact">
                         <h2>Envia un mensaje</h2>
                         <div class="user_info">
-                            <label for="names">Nombres y Apellidos*</label>
+                            <label for="names" name="nombre" placeholder="Escribe tu nombre">Nombres *</label>
                             <input type="text" id="names">
             
-                            <label for="phone">Telefono / Celular</label>
+                            <label for="phone" name="telefono" placeholder="Escribe tu numero">Telefono / Celular</label>
                             <input type="text" id="phone">
             
-                            <label for="email">Correo electronico *</label>
+                            <label for="email"  name="email" placeholder="Email">Correo electronico *</label>
                             <input type="text" id="email">
             
                             <label for="mensaje">Mensaje *</label>
-                            <textarea id="mensaje"></textarea>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu proyecto o mensaje"></textarea>
             
-                            <input type="button" value="Enviar Mensaje" id="btnSend">
+                            <input type="submit" value="Enviar Mensaje" id="btnSend">
                         </div>
                     </form>
             
@@ -160,7 +159,7 @@
                 <div class="caja derecha">
                     <div class="contactanos">
                         <div class="boton">
-                            <button hr >Contactarnos</button>
+                            <button><a href="/Formulario de contacto/index.html">Contactarnos</a></button>
                             <p>Si nos quieres contactar, usa este botón para ir al formulario de contacto.</p>
                         </div>
                     </div>
@@ -168,6 +167,6 @@
             </div>
         </div>
         <!-------------Vinculo de JavaScript---------------->
-        <script src="/JavaScript's/NewSpace.js" language="javascript" type="text/javascript"></script>
+        <script src="/JavaScript's/NewSpaceContacto.js" language="javascript" type="text/javascript"></script>
     </body>
 </html>
