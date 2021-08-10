@@ -527,7 +527,7 @@ body.active .contenedor1 {
 
 .form_wrap{
   width: 1050px;
-  height: 530px;
+  height: auto;
   display: flex;
 
   background: #fff;
@@ -718,17 +718,6 @@ margin: 10px 0px 15px;
   margin-right: 8px;
 }
 
-#btnClose{
-  display: inline-block;
-padding: 3px 10px;
-margin-top: 10px;
-
-background: #E25151;
-color: #fff;
-border: 2px solid #B14141;
-cursor: pointer;
-float: right;
-}
 
 /* MENSAJE EXITOSO*/
 
