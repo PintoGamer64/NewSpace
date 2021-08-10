@@ -6,7 +6,10 @@ La siguientes versiones, añadidas a esta lista, tiene soporte para actualizacio
 
 | Version |     Supported      |   Tipo de Version    | Fecha / Fin de Soporte |
 | ------- | ------------------ | -------------------- | ---------------------- |
-|  1.0.0  | :white_check_mark: | Preliminar / Estable |    No se Determina     |
+|  1.0.0  |         :x:        | Preliminar / Estable |   1 / Agosto / 2021    |
+|  1.0.4  | :white_check_mark: | Preliminar / Estable |  1 / Septiembre / 2021 |
+|  1.0.6  | :white_check_mark: | Preliminar / Estable |   1 / Octubre / 2021   |
+|  1.0.8  | :white_check_mark: | Preliminar / Estable |    En Actualizacion    |
 |  Prox.  |         :x:        | -------------------- | ---------------------- |
 
 Esta vista se ira actualizando cuando se saquen nuevas versiones.
