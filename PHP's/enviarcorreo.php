@@ -11,7 +11,7 @@ $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 
 $mensajeCompleto = "Enviado desde formulario de NewSpaceCol | Formulario de contacto";
-$header = "\n" . "Nombre: " . $nombre . "\n" . "Correo: " . $email . "\n" . "Telefono: " . $telefono . "\n" . "\n" . "Mensaje: " . $mensaje . "\n" . "\n" . "Tipo de plan Adquirido: " . $planes . "\n" . "País de Origen: " . $pais . "\n" . "\n" . "Este correo fue enviado desde el sistema de formularios de contacto - Contacto de NewSpace.";
+$header = "\n" . "Nombre: " . $nombre . "\n" . "Correo: " . $email . "\n" . "Telefono: " . $telefono . "\n" . "\n" . "Mensaje: " . "\n" . $mensaje . "\n" . "\n" . "Tipo de plan Adquirido: " . $planes . "\n" . "País de Origen: " . $pais . "\n" . "\n" . "Este correo fue enviado desde el sistema de formularios de contacto - Contacto de NewSpace.";
 
 mail($destino, $mensajeCompleto, $header,);
 header('Location: mensaje-de-envio.html');
