@@ -5,12 +5,15 @@ $destino = "pintogamer64@gmail.com";
 
 $nombre = $_POST['nombre']; 
 $email = $_POST['email'];
+$pais = $_POST['pais'];
+$planes = $_POST['planes'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 
-$header = "Enviado desde formulario de NewSpaceCol";
-$mensajeCompleto = "\n Nombre: " . $nombre . "\n" . "Email: " . $email . "\n" . "Telefono :" . $telefono . "\n" . "Mensaje :" . $mensaje;
-mail($destino, $mensajeCompleto, $header);
+$mensajeCompleto = "Enviado desde formulario de NewSpaceCol | Formulario de contacto";
+$header = "\n" . "Nombre: " . $nombre . "\n" . "Correo: " . $email . "\n" . "Telefono: " . $telefono . "\n" . "\n" . "Mensaje: " . $mensaje . "\n" . "\n" . "Tipo de plan Adquirido: " . $planes . "\n" . "País de Origen: " . $pais . "\n" . "\n" . "Este correo fue enviado desde el sistema de formularios de contacto - Contacto de NewSpace.";
+
+mail($destino, $mensajeCompleto, $header,);
 header('Location: mensaje-de-envio.html');
 ?>
 

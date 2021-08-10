@@ -602,7 +602,7 @@ body.active .contenedor1 {
   margin: 10px;
 }
 
-.derecha .contactanos .boton button {
+.derecha .contactanos .boton a button {
   margin-left: auto;
   margin-right: auto;
   height: 40px;

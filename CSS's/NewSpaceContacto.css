@@ -835,7 +835,7 @@ margin: 10px 0px 15px;
   margin: 10px;
 }
 
-.derecha .contactanos .boton button {
+.derecha .contactanos .boton a button {
   margin-left: auto;
   margin-right: auto;
   height: 40px;

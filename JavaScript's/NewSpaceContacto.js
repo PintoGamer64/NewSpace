@@ -28,8 +28,8 @@ let totalHeight = document.body.scrollHeight - window.innerHeight;
         let progressHeight = (window.pageYOffset / totalHeight) * 99;
         progressbar.style.height = progressHeight + "%";
     }
-    
-/*-------------Verificacion---------------*/
+
+/*-------------Verificación---------------*/
 $(document).ready(function(){
 
     $('#btnSend').click(function(){
