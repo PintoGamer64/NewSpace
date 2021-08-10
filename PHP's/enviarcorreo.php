@@ -9,7 +9,7 @@ $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 
 $header = "Enviado desde formulario de NewSpaceCol";
-$mensajeCompleto = "\n Nombre: " . $nombre . "\n" . "Email: " . $email . "\n" . "Telefono :" . $telefono . "\n". "Mensaje :" . $mensaje;
+$mensajeCompleto = "\n Nombre: " . $nombre . "\n" . "Email: " . $email . "\n" . "Telefono :" . $telefono . "\n" . "Mensaje :" . $mensaje;
 mail($destino, $mensajeCompleto, $header);
 header('Location: mensaje-de-envio.html');
 ?>
