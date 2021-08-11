@@ -118,10 +118,10 @@
                         <h2>Envia tu Mensjae De Contacto</h2>
                         <div class="user_info">
                             <label for="names">* Nombres *</label>
-                            <input type="text" id="names" name="nombre" placeholder="Escribe tu Nombre" required>
+                            <input type="text" id="names" name="nombre" placeholder="Escribe tu Nombre" pattern="[A-Za-z]{0-35}" required>
             
                             <label for="phone">* Telefono / Celular *</label>
-                            <input type="text" id="phone" name="telefono" placeholder="Escribe tu Numero" required>
+                            <input type="text" id="phone" name="telefono" placeholder="Escribe tu Numero" pattern="[0-9]{0-20}" required>
 
                             <label for="country">* Pais *</label>
                             <input type="text" id="pais" name="pais" placeholder="Escribe tu Pais" required>
@@ -130,7 +130,7 @@
                             <input type="text" id="planes" name="planes" placeholder="Especifica que Tipo de Plan Quieres" required>
             
                             <label for="email">* Correo electrónico *</label>
-                            <input type="text" id="email" name="email" placeholder="Escribe tu Email" required>
+                            <input type="text" id="email" name="email" placeholder="Escribe tu Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             
                             <label for="mensaje">* Mensaje *</label>
                             <textarea id="mensaje" name="mensaje" placeholder="Escribe tu Proyecto o Mensaje" required></textarea>
