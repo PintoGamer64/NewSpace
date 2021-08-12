@@ -115,7 +115,7 @@
                     </section>
             
                     <form action="/PHP's/enviarcorreo.php" method="POST" class="form_contact">
-                        <h2>Envia tu Mensjae De Contacto</h2>
+                        <h2>Enviá tu Mensaje De Contacto</h2>
                         <div class="user_info">
                             <label for="names">* Nombres *</label>
                             <input type="text" id="names" name="nombre" placeholder="Escribe tu Nombre" pattern="[A-Za-z]{0-35}" required>
@@ -123,12 +123,27 @@
                             <label for="phone">* Telefono / Celular *</label>
                             <input type="text" id="phone" name="telefono" placeholder="Escribe tu Numero" pattern="[0-9]{0-20}" required>
 
-                            <label for="country">* Pais *</label>
-                            <input type="text" id="pais" name="pais" placeholder="Escribe tu Pais" required>
+                            <label for="pais">* País *</label>
+                            <select name="pais" id="pais">
+                                <option value="Colombia">Colombia</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Panama">Panamá</option>
+                                <option value="Mexico">México</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
 
                             <label for="plans">* Planes *</label>
-                            <input type="text" id="planes" name="planes" placeholder="Especifica que Tipo de Plan Quieres" required>
-            
+                            <select name="planes" id="pais">
+                                <option value="Inicial">Inicial</option>
+                                <option value="Profesional">Profesional</option>
+                                <option value="Ultimate">Ultimate</option>
+                            </select>
+
                             <label for="email">* Correo electrónico *</label>
                             <input type="text" id="email" name="email" placeholder="Escribe tu Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             

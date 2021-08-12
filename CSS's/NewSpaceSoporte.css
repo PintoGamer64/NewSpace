@@ -404,7 +404,7 @@ body.active .Perfil {
 .Contenido {
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 101%;
   right: 0%;
   z-index: 1; /*-<---*/
   transition: all 0.5s ease;
@@ -546,7 +546,7 @@ body.active .contenedor1 {
   top: 0;
   left: 0;
 
-  background: #595959;
+  background: #323232;
   opacity: 0.9;
 }
 
@@ -647,7 +647,8 @@ form.form_contact textarea{
   padding-left: 15px;
   max-width: 100%;
   min-width: 100%;
-  max-height: 200px;
+  min-height: 100px;
+  max-height: 300px;
 }
 
 form.form_contact input[type="button"]{

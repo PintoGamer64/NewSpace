@@ -89,23 +89,12 @@
             </div>
             <div class="contenedor1">
                 <section class="form_wrap">
-
-                    <section class="cantact_info">
-                        <section class="info_title">
-                            <span class="fa fa-user-circle"></span>
-                            <h2>INFORMACION<br>DE CONTACTO</h2>
-                        </section>
-                        <section class="info_items">
-                            <p><span class="fa fa-envelope"></span> NewSpaceCorreo@outlook.com</p>
-                            <p><span class="fa fa-mobile"></span>+57 322 4004147</p>
-                        </section>
-                    </section>
             
                     <form action="/PHP's/CorreoSoporte.php" method="POST" class="form_contact">
                         <h2>Envia tu Mensjae De Contacto</h2>
                         <div class="user_info">
                             <label for="names">* Nombres *</label>
-                            <input type="text" id="names" name="nombre" placeholder="Escribe tu Nombre" pattern="[A-Z a-zA-za-Z]{50}" maxlength="50" required>
+                            <input type="text" id="names" name="nombre" placeholder="Escribe tu Nombre" pattern="[A-Za-zA-za-Z]{50}" maxlength="35" required>
             
                             <label for="phone">* Telefono / Celular *</label>
                             <input type="text" id="phone" name="telefono" placeholder="Escribe tu Numero" pattern="[0-99-0]{9-16}" maxlength="16" title="20 o menos caracteres" required>
@@ -125,7 +114,7 @@
                             </select>
 
                             <label for="problema">* Tipo de Problema o Duda *</label>
-                            <select name="Problema" id="pais">
+                            <select name="Problema" id="problemas">
                                 <option value="Pagina">Pagina Web</option>
                                 <option value="Terminos">Documentación</option>
                                 <option value="Servicios">Servicios</option>
@@ -144,7 +133,18 @@
                             <input type="submit" value="Enviar Mensaje" id="btnSend">
                         </div>
                     </form>
-            
+                
+                    <section class="cantact_info">
+                        <section class="info_title">
+                            <span class="fa fa-user-circle"></span>
+                            <h2>INFORMACION<br>DE CONTACTO</h2>
+                        </section>
+                        <section class="info_items">
+                            <p><span class="fa fa-envelope"></span> NewSpaceCorreo@outlook.com</p>
+                            <p><span class="fa fa-mobile"></span>+57 322 4004147</p>
+                        </section>
+                    </section>
+
                 </section>
             </div>
 <!-----------------------Footer o pie de Pagina------------------------>
