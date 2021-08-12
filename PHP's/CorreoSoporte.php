@@ -50,6 +50,6 @@ $mensajeCompleto = "Soporte de NewSpace | Soporte";
 $header = "\n" . "Nombres: " . $nombre . "\n" . "Correo: " . $email . "\n" . "Telefono: " . $telefono . "\n" . "\n" . "Mensaje: " . "\n" . $mensaje . "\n" . "\n" . "Tipo de Problema: " . $problema . "\n" . "País de Origen: " . $pais . "\n" . "\n" . "Este correo fue enviado desde el sistema de formularios de Soporte - Soporte de NewSpace.";
 
 mail($destino, $mensajeCompleto, $header,);
-header('Location: mensaje-de-envio.html');
+header('Location: mensaje-de-soporte.html');
 ?>
 
