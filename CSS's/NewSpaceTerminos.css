@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/*-----------------------------------*/
+
+::-webkit-scrollbar {
+  height: 2px;
+  background: rgb(79, 79, 79);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 20px;
+  border: #585858;
+}
+
+
+/*-----------------------------------*/
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+
+#scrollpath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}
+
+#progressbar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}
+
+
+/*------------------------------------------*/
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  transition: all 0.5s ease;
+  overflow-x: hidden;
+}
+
+body.active {
+  background: #121212;
+  transition: all 0.5s ease;
+}
+
+body.active p,
+h1,
+h2 {
+  color: #ffffff;
+}
+
+.barra_lateral {
+  position: fixed;
+  z-index: 2; /*-<---*/
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 85px;
+  background: #0A0A2A;
+  padding: 6px 14px;
+  transition: all 0.5s ease;
+}
+
+.barra_lateral.active {
+  width: 240px;
+}
+
+body.active .barra_lateral {
+  border-right: solid 5px #1d1b31;
+  background: #1f1f1f;
+}
+
+.Logo {
+  color: #ffffff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.barra_lateral.active .Logo {
+  opacity: 1;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.Logo_Name {
+  font-size: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Menu {
+  position: absolute;
+  color: #ffffff;
+  left: 0%;
+  top: 6px;
+  cursor: pointer;
+  font-size: 30px;
+  height: 50px;
+  z-index: 99;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(+25%);
+  background: #0A0A2A;
+  transition: all 0.45s ease;
+}
+
+.barra_lateral.active #Menu {
+  left: 90%;
+}
+
+body.active .barra_lateral.active #Menu {
+  background: #1f1f1f;
+  border-right: solid 5px #1d1b31;
+}
+
+body.active #Menu {
+  background: #1f1f1f;
+}
+
+.barra_lateral ul {
+  position: relative;
+  z-index: 90;
+  top: -58%;
+  left: -20%;
+  margin-top: 20px;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.barra_lateral.active ul {
+  transition: all 0.5s ease;
+  opacity: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.barra_lateral ul li {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  pointer-events: none;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+  transition: all 0.5s ease;
+}
+
+.barra_lateral ul li.active {
+  border-bottom: solid 1.5px #ffffff;
+}
+
+.barra_lateral.active ul li.active {
+  border-bottom: solid 1.5px #9f9f9f;
+}
+
+.barra_lateral ul li input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border: solid 2px #000;
+  outline: none;
+  background: #1d1b31;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s ease;
+}
+
+.barra_lateral.active ul li input {
+  transition: all 0.5s ease;
+  opacity: 1;
+  pointer-events: all;
+  border-bottom: solid 1px #ffffff;
+}
+
+body.active .barra_lateral.active ul li input {
+  transition: all 0.5s ease;
+  border: solid 4px #1d1b31;
+}
+
+.barra_lateral ul li input,
+.barra_lateral.active ul li input {
+  background: #000;
+}
+
+.Nombre_Links {
+  opacity: 0;
+  transition: all 0.05s ease;
+}
+
+.barra_lateral.active .Nombre_Links {
+  pointer-events: none;
+  opacity: 1;
+  transition: all 0.05s ease;
+}
+
+.barra_lateral ul li a {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.05s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.barra_lateral.active ul li a {
+  transition: all 0.5s ease;
+  pointer-events: all;
+}
+
+.barra_lateral.active ul li a:hover {
+  transition: all 0.05s ease;
+  pointer-events: all;
+  font-size: 20px;
+  width: 100%;
+  color: #000;
+  background: #ffffff;
+}
+
+body.active .barra_lateral.active ul li a:hover {
+  transition: all 0.05s ease;
+  pointer-events: all;
+  font-size: 20px;
+  width: 100%;
+  color: #ffffff;
+  background: #000;
+}
+
+.barra_lateral ul li a i {
+  transition: all 0.5s ease;
+  height: 50px;
+  min-width: 60px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  pointer-events: all;
+}
+
+.barra_lateral.active ul li a:hover i {
+  text-shadow: -5px -5px rgba(46, 0, 111, 0.453);
+}
+
+.Contenido_Perfil {
+  position: absolute;
+  color: #ffffff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.Perfil {
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
+  background: #1d1b31;
+  transition: all 0.5s ease;
+  flex-wrap: nowrap;
+}
+
+body.active .Perfil {
+  transition: all 0.5s ease;
+  background: #000;
+  flex-wrap: nowrap;
+}
+
+.Detalles_Perfil {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.barra_lateral.active .Detalles_Perfil {
+  opacity: 1;
+  pointer-events: none;
+  transition: all 2s ease;
+}
+
+.Imagen_Perfil {
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.Nombre_Trabajo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Nombre {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.Trabajo {
+  font-size: 12px;
+}
+
+#toggle {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  top: 10px;
+  left: 5px;
+  display: block;
+  width: 65px;
+  height: 30px;
+  background: #ffffff;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+#toggle.active {
+  background: #585858;
+  pointer-events: all;
+}
+
+#toggle.active .Indicador {
+  left: 35px;
+  background: linear-gradient(#2E64FE, #A4A4A4);
+}
+
+.Indicador {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  pointer-events: all;
+  height: 30px;
+  background: linear-gradient(#FFFF00, #ffaf01);
+  transform: scale(0.8);
+  border-radius: 15px;
+}
+
+
+/*-------Código del Contenido---------*/
+
+.Contenido {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0%;
+  z-index: 1; /*-<---*/
+  transition: all 0.5s ease;
+}
+
+.Contenido.active {
+  width: 88.5%;
+}
+
+.Logo_Imagen {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  right: 0;
+  z-index: 10;
+  border-bottom: solid 5px #1d1b31;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
+body.active .Logo_Imagen {
+  transition: all 0.5s ease;
+  background: #1f1f1f;
+}
+
+.Logo_Imagen img {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  transition: all 0.5s ease;
+}
+
+body.active .Logo_Imagen img {
+  transition: all 0.5s ease;
+  background: #ffffff82;
+}
+
+.contenedor1 {
+  text-align: center;
+  top: 60px;
+  position: relative;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  margin-left: 180px;
+  margin-top: 30px;
+  margin-right: 150px;
+  transition: all 0.5s ease;
+  border-bottom: solid 2.5px #27216f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body.active .contenedor1 {
+  border-bottom: solid 4px rgb(79, 79, 79);
+}
+
+.contenedor1 img {
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.contenedor1 #diseño {
+  position: relative;
+  transition: all 10s ease;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.contenedor1 h1 {
+  color: #000;
+  margin: 10px;
+}
+
+.contenedor1 p {
+  margin: 20px;
+}
+
+.contenedor1 .textual {
+  position: relative;
+  float: left;
+}
+
+body.active .contenedor1 h1 {
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+body.active .contenedor1 {
+  background: #ffffff85;
+}
+
+.contenedor1.active {
+  transition: all 0.5s ease;
+  margin-left: 180px;
+  display: flex;
+}
+/*----------------------Footer---------------------*/
+
+.main-content {
+  border-top: solid 5px #8c8c8c;
+  margin-top: 80px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  background: #111;
+  margin-left: 6.5%;
+  transition: 0.01s;
+}
+
+.caja {
+  text-align: center;
+}
+
+.caja h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #232387;
+  border-left: solid 5px rgb(91, 91, 91);
+}
+
+.izquierda {
+  width: 30.5%;
+  margin: 1%;
+}
+
+.central {
+  width: 30.5%;
+  margin: 1%;
+}
+
+.derecha {
+  margin: 1%;
+  width: 30.5%;
+}
+
+.izquierda .content p {
+  text-align: center;
+  color: #ffffff;
+}
+
+.izquierda .content div {
+  float: left;
+}
+
+.izquierda .content {
+  margin: 20px 0 0 0;
+}
+
+.central .content .bx {
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 40px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #ffffff;
+  align-items: center;
+}
+
+.central .content .bx:hover {
+  background: #151555;
+}
+
+.central .content .texto {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.central .content .phone {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.derecha .contactanos .boton {
+  margin: 10px;
+}
+
+.derecha .contactanos .boton a button {
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 60%;
+  border: none;
+  outline: none;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.derecha .contactanos .boton p {
+  text-align: right;
+  color: #ffffff;
+  margin: 10px;
+  width: 80%;
+}
+
+.Contenido.active .derecha .contactanos .boton button {
+  width: 75%;
+}
+
+.derecha .contactanos .boton button:hover {
+  background: #151555;
+  color: #fff;
+}

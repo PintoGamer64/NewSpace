@@ -515,9 +515,9 @@ body.active .contenedor1 {
 /*----------------------Tarjetas Servicios---------------------*/
 .tarjeta{
   position: relative;
-  height: 250px;
+  height: 710px;
   background: #fff;
-  width: 45%;
+  width: 30%;
   display: flex;
   margin: 10px;
   border-bottom: solid 6px #000;
@@ -551,6 +551,23 @@ body.active .tarjeta{
 }
 .contenidotarjeta{
   margin: 8px;
+}
+.contenidotarjeta ul{
+  margin-left: 20px;
+}
+.contenidotarjeta a{
+  width: 60%;
+  height: 20px;
+  padding: 10px;
+  border: solid 2px #000;
+  text-decoration: none;
+  color: #fff;
+  background: #151555;
+  transition: all 0.3s ease;
+}
+.contenidotarjeta a:hover{
+  background: #000000;
+  transition: all 0.3s ease;
 }
 .tarjeta:hover{
   border-top: solid 3px #000;
