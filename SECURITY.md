@@ -39,5 +39,5 @@ Para saber si su reporte es valido, les llegara un correo, diciendo que acepte s
 
 Los cambios nuevos se estaran realizando en ramas aparte de la predeterminada (master).
 
-ATTE: Joan Sebastian Cardozo Salinas / Pintogamer64
+ATTE: Joan Sebastian Cardozo Salinas / Pinto_Gamer64
 
