@@ -10,6 +10,7 @@ La siguientes versiones, añadidas a esta lista, tiene soporte para actualizacio
 |  1.0.4  | :white_check_mark: | Preliminar / Estable |  1 / Septiembre / 2021 |
 |  1.0.6  | :white_check_mark: | Preliminar / Estable |   1 / Octubre / 2021   |
 |  1.0.8  | :white_check_mark: | Preliminar / Estable |    En Actualizacion    |
+|  1.0.9  | :white_check_mark: | Preliminar / Estable |    En Actualizacion    |
 |  Prox.  |         :x:        | -------------------- | ---------------------- |
 
 Esta vista se ira actualizando cuando se saquen nuevas versiones.
