@@ -31,11 +31,11 @@ if ($_REQUEST['pais'] == 'Colombia' ){
 }
 
 if ($_REQUEST['planes'] == 'Inicial' ){
-    $planes = "Inical";
+    $planes = "Inical = 99 USD";
 }else if ($_REQUEST['planes'] == 'Profesional' ){
-    $planes = "Profesional";
+    $planes = "Profesional = 199 USD";
 }else if ($_REQUEST['planes'] == 'Ultimate' ){
-    $planes = "Ultimate";
+    $planes = "Ultimate = 299 USD";
 }
 
 $mensajeCompleto = "Enviado desde formulario de NewSpaceCol | Formulario de contacto";
